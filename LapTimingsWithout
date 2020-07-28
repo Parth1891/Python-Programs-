@@ -1,0 +1,24 @@
+print("Enter timing for Lap 1")
+min1=int(input("Enter min: "))
+sec1=int(input("Enter sec: "))
+mili1=int(input("Enter mili: "))
+print("Enter timing of Lap 2")
+min2=int(input("Enter min: "))
+sec2=int(input("Enter sec: "))
+mili2=int(input("Enter mili: "))
+print("Enter timing of Lap 3")
+min3=int(input("Enter min: "))
+sec3=int(input("Enter sec: "))
+mili3=int(input("Enter mili: "))
+print("The first lap timing is ",min1,":",sec1,":",mili1)
+print("The second lap timing is ",min2,":",sec2,":",mili2)
+print("The third lap timing is ",min3,":",sec3,":",mili3)
+
+Lap_1=min1*60000+sec1*1000+mili1
+Lap_2=min2*60000+sec2*1000+mili2
+Lap_3=min3*60000+sec3*1000+mili3
+res = min(Lap_1,Lap_2,Lap_3)
+ans = {"Lap1": Lap_1,"Lap2": Lap_2,"Lap3": Lap_3}
+for key,value in ans.items():
+    if value == res:
+        print("The fastest lap is {} with time {} milliseconds.".format(key,value))
