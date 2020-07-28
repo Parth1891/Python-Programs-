@@ -1,0 +1,35 @@
+import math
+no = input("Enter the Operation to be Performed:")
+no = int(no)
+if no == 1:
+    dig1 = input("Enter first digit:")
+    dig2 = input("Enter second digit:")
+    ans = int(dig1) + int(dig2)
+    print("The result is ", ans)
+elif no == 2:
+    dig1 = input("Enter first digit:")
+    dig2 = input("Enter second digit:")
+    ans = int(dig1) - int(dig2)
+    print("The result is ", ans)
+elif no == 3:
+    dig1 = input("Enter first digit:")
+    dig2 = input("Enter second digit:")
+    ans = int(dig1) * int(dig2)
+    print("The result is ",ans)
+elif no == 4:
+    dig1 = input("Enter digit in Radians:")
+    ans = math.sin(float(dig1))
+    print("The result is ",ans)
+elif no == 5:
+    dig1 = input("Enter digit in Radians:")
+    ans = math.cos(float(dig1))
+    print("The result is ",ans)
+elif no == 6:
+    dig1 = input("Enter digit in Radians:")
+    ans = math.tan(float(dig1))
+    print("The result is ",ans)
+else:
+    dig1 = input("Enter digit:")
+    dig2 = input("Enter exponent:")
+    ans = math.pow(int(dig1), int(dig2))
+    print("The result is ", ans)
