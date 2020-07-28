@@ -1,0 +1,5 @@
+number = input ("Enter the number of rows to be printed:")
+for i in range (0, int(number)):
+    for j in range (0, i+1):
+        print("* ", end="")
+    print("\n")
