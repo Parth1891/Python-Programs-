@@ -1,0 +1,12 @@
+no = input("Enter the digit to be checked:")
+no = int(no)
+number = no
+pal = 0
+while (no>0):
+    rev = no % 10
+    pal = pal*10 + rev
+    no = no//10
+if pal == number:
+    print("It is a Palindrome.")
+else:
+    print("It is not a Palindrome.")
