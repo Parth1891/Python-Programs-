@@ -1,0 +1,14 @@
+Str_1 = input("Enter the first string:")
+Str_2 = input("Enter the other string:")
+# for with case-sensitive
+if Str_1 == Str_2:
+    print("True with case sensitive approach")
+else:
+    print("False with case sensitive approach")
+# for without case-sensitive
+Str_2 = Str_2.lower()
+Str_1 = Str_1.lower()
+if Str_1 == Str_2:
+    print("True without case sensitive approach")
+else:
+    print("False without case sensitive approach")
