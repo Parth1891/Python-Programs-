@@ -1,0 +1,14 @@
+import array
+lst = []
+n = int(input("Enter the number of elements:"))
+print("Enter the elements:")
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele)
+pat = array.array("i", lst)
+for k in range(n-1):
+    for l in range(0,n-k-1):
+        if pat[l] > pat[l+1]:
+            pat[l+1] , pat[l] = pat[l] , pat[l+1]
+for j in range(0,n):
+    print(pat[j])
